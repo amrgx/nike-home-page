@@ -85,11 +85,13 @@ section.hero{
     height: 90vh;
     animation: moveDown 1s ease-in-out forwards;
     opacity: 0;
-    .down-arrow{
+    svg.down-arrow{
         stroke: white;
         position: absolute;
+        padding-top: 20px;
         bottom: 2em;
         width: 1em;
+        
     animation:moveArrow 1s alternate-reverse infinite;
 
         path{
@@ -149,6 +151,7 @@ ul{
         &:hover{
             background: none;
             text-decoration: underline;
+            text-underline-offset: 3px;
         }
     }
 }
@@ -177,6 +180,7 @@ section.hero{
   svg.down-arrow{
     stroke: black;
     position: unset;
+    padding-top: 20px;
     path{
         fill: black;
     }

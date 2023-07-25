@@ -81,14 +81,15 @@ section.hero {
   animation: moveDown 1s ease-in-out forwards;
   opacity: 0;
 }
-section.hero .down-arrow {
+section.hero svg.down-arrow {
   stroke: white;
   position: absolute;
+  padding-top: 20px;
   bottom: 2em;
   width: 1em;
   animation: moveArrow 1s alternate-reverse infinite;
 }
-section.hero .down-arrow path {
+section.hero svg.down-arrow path {
   fill: white;
 }
 
@@ -139,6 +140,7 @@ section.hero .down-arrow path {
   nav ul a:hover {
     background: none;
     text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .img-hero {
     left: unset;
@@ -161,6 +163,7 @@ section.hero .down-arrow path {
   section.hero svg.down-arrow {
     stroke: black;
     position: unset;
+    padding-top: 20px;
   }
   section.hero svg.down-arrow path {
     fill: black;
